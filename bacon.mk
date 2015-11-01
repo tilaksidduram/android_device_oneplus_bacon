@@ -99,10 +99,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     libboringssl-compat
 
-# Camera
-PRODUCT_PACKAGES += \
-    camera.bacon
-
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
