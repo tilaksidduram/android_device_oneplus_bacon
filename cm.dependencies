@@ -10,5 +10,9 @@
   {
     "repository": "android_vendor_qcom_opensource_dataservices",
     "target_path": "vendor/qcom/opensource/dataservices"
+  },
+  {
+    "repository": "android_external_sony_boringssl-compat",
+    "target_path": "external/sony/boringssl-compat"
   }
 ]
