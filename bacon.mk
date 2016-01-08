@@ -109,7 +109,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.bacon
+    camera.bacon \
+    Snap
 
 # Charger
 PRODUCT_PACKAGES += \
