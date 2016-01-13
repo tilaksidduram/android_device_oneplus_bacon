@@ -125,8 +125,7 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui
 
 # Data
 PRODUCT_PACKAGES += \
-    librmnetctl \
-    rmnetcli
+    librmnetctl
 
 # Display
 PRODUCT_AAPT_CONFIG := normal
