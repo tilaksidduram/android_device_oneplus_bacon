@@ -171,6 +171,9 @@ on boot
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
 
+    # change this when HAL3 is working
+    setprop persist.camera.HAL3.enabled 0
+
 on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
 
