@@ -71,6 +71,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.bacon \
+    libshim_camera \
     Snap
 
 # Busybox
