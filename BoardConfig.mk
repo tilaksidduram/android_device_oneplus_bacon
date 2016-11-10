@@ -161,6 +161,9 @@ TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.bacon
 # RPC
 TARGET_NO_RPC := true
 
+# SDClang
+TARGET_USE_SDCLANG := true
+
 # Sensors
 # BOARD_GLOBAL_CFLAGS += -DCOMPAT_SENSORS_M
 # TARGET_NEEDS_GCC_LIBC := true
