@@ -41,6 +41,9 @@ ro.sys.fw.bservice_age=5000
 persist.gps.qc_nlp_in_use=0
 ro.gps.agps_provider=1
 
+# Google Assistant
+ro.opa.eligible_device=true
+
 # Media
 af.fast_track_multiplier=1
 audio_hal.period_size=192
