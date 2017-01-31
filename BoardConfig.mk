@@ -168,9 +168,6 @@ TARGET_USE_SDCLANG := true
 # BOARD_GLOBAL_CFLAGS += -DCOMPAT_SENSORS_M
 # TARGET_NEEDS_GCC_LIBC := true
 
-# Text relocations for legacy blobs
-TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
-
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
