@@ -98,12 +98,12 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Doze
-PRODUCT_PACKAGES += \
-    OneplusDoze
+# PRODUCT_PACKAGES += \
+#    OneplusDoze
 
 # Gello
-PRODUCT_PACKAGES += \
-    Gello
+# PRODUCT_PACKAGES += \
+#    Gello
 
 # Graphics
 PRODUCT_PACKAGES += \

@@ -1,0 +1,42 @@
+[
+  {
+   "repository" : "DirtyUnicorns/android_device_oppo_common",
+   "target_path": "device/oppo/common"
+   "branch"     : "n7x-caf"
+  },
+  {
+   "repository" : "LineageOS/android_kernel_oneplus_msm8974",
+   "target_path": "kernel/oneplus/msm8974"
+   "branch"     : "Cm-14.1"
+  },
+ {
+   "repository" : "DirtyUnicorns/android_system_qcom",
+   "target_path": "system/qcom",
+   "branch"     : "n7x-caf"
+ },
+ {
+   "repository" : "DirtyUnicorns/android_external_ant-wireless_ant_service",
+   "target_path": "external/ant-wireless/ant_service",
+   "branch"     : "n7x-caf"
+ },
+ {
+   "repository" : "DirtyUnicorns/android_external_ant-wireless_ant_native",
+   "target_path": "external/ant-wireless/ant_native",
+   "branch"     : "n7x-caf"
+ },
+ {
+   "repository" : "DirtyUnicorns/android_external_ant-wireless_antradio-library",
+   "target_path": "external/ant-wireless/antradio-library",
+   "branch"     : "n7x-caf"
+ },
+ {
+   "repository" : "DirtyUnicorns/android_vendor_qcom_binaries",
+   "target_path": "vendor/qcom/binaries",
+   "branch"     : "n7x-caf"
+ },
+  {
+   "repository" : "DirtyUnicorns/android_external_sony_boringssl-compat",
+   "target_path": "external/sony/boringssl-compat"
+   "branch"     : "n7x-caf"
+  }
+]
