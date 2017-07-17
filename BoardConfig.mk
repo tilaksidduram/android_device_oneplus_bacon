@@ -156,8 +156,9 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_RIL_VARIANT := caf
 
 # Recovery
-# TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.bacon
-TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/multirom/mrom.fstab
+#TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/multirom/mrom.fstab
+#TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.bacon
+#TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/recovery.fstab
 RECOVERY_VARIANT := twrp
 
 # RPC
@@ -170,7 +171,7 @@ BOARD_SEPOLICY_DIRS += \
     $(PLATFORM_PATH)/sepolicy
 
 # TWRP
-DEVICE_RESOLUTION := 1080x1920
+#DEVICE_RESOLUTION := 1080x1920
 TW_THEME := portrait_hdpi
 TW_THEME_LANDSCAPE := landscape_hdpi
 TW_TARGET_USES_QCOM_BSP := true
@@ -181,7 +182,6 @@ TW_INCLUDE_CRYPTO := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
-TARGET_USERIMAGES_USE_F2FS := true
 TARGET_HW_DISK_ENCRYPTION := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
@@ -204,12 +204,13 @@ MR_DEVICE_HOOKS := $(PLATFORM_PATH)/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 4
 MR_CONTINUOUS_FB_UPDATE := true
 MR_USE_QCOM_OVERLAY := true
-#MR_QCOM_OVERLAY_HEADER := $(PLATFORM_PATH)/multirom/framebuffer_qcom_overlay.h
-MR_QCOM_OVERLAY_HEADER := $(PLATFORM_PATH)/multirom/mr_qcom_overlay.h
-MR_QCOM_OVERLAY_HEAP_ID_MASK := 2
+MR_QCOM_OVERLAY_HEADER := $(PLATFORM_PATH)/multirom/framebuffer_qcom_overlay.h
+#MR_QCOM_OVERLAY_HEADER := $(PLATFORM_PATH)/multirom/mr_qcom_overlay.h
+#MR_QCOM_OVERLAY_HEAP_ID_MASK := 2
 MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
 MR_PIXEL_FORMAT := "ABGR_8888"
 MR_DEVICE_VARIANTS := bacon A0001 One
+#MR_DEVICE_SPECIFIC_VERSION := e
 MR_ENCRYPTION := true
 
 include device/common/version-info/MR_REC_VERSION.mk
@@ -219,6 +220,10 @@ MR_REC_VERSION := $(shell date -u +%Y%m%d)-01
 endif
 
 BOARD_MKBOOTIMG_ARGS += --board mrom$(MR_REC_VERSION)
+
+#Force populating /dev/block/platform/msm_sdcc.1/by-name
+#from the emmc
+MR_POPULATE_BY_NAME_PATH := "/dev/block/platform/msm_sdcc.1/by-name"
 
 MR_NO_KEXEC := enabled
 # possible options:
