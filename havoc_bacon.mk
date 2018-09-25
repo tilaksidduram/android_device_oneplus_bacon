@@ -18,10 +18,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
-# Inherit from aosp vendor
-$(call inherit-product, vendor/pixys/config/common.mk)
+# Inherit from Havoc vendor
+$(call inherit-product, vendor/havoc/products/common.mk)
 
-PRODUCT_NAME := pixys_bacon
+PRODUCT_NAME := havoc_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := A0001
