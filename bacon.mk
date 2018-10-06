@@ -28,10 +28,10 @@ PRODUCT_PACKAGES += \
     Terminal
 
 # ANT+
-#PRODUCT_PACKAGES += \
-#    AntHalService \
-#    com.dsi.ant.antradio_library \
-#    libantradio
+PRODUCT_PACKAGES += \
+    AntHalService \
+    com.dsi.ant.antradio_library \
+    libantradio
 
 # API (for CTS backward compatibility)
 PRODUCT_PROPERTY_OVERRIDES += \
