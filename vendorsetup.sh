@@ -1,1 +1,2 @@
-add_lunch_combo arrow_bacon-userdebug
+add_lunch_combo havoc_bacon-eng
+add_lunch_combo havoc_bacon-userdebug

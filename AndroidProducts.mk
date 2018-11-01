@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_bacon.mk
+    $(LOCAL_DIR)/havoc_bacon.mk
